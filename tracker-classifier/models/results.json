@@ -1,0 +1,68 @@
+{
+  "dataset": {
+    "total_domains": 16165,
+    "train_size": 12932,
+    "test_size": 3233,
+    "n_features": 295,
+    "class_distribution": {
+      "tracking": 5809,
+      "non_tracking": 10356
+    }
+  },
+  "models": {
+    "random_forest": {
+      "accuracy": 0.925765542839468,
+      "precision": 0.8946917808219178,
+      "recall": 0.8993115318416524,
+      "f1": 0.8969957081545065,
+      "roc_auc": 0.9623019220428655
+    },
+    "xgboost": {
+      "accuracy": 0.9273120940303125,
+      "precision": 0.8911392405063291,
+      "recall": 0.9087779690189329,
+      "f1": 0.8998721772475501,
+      "roc_auc": 0.9628007788898577
+    },
+    "feedforward": {
+      "accuracy": 0.9112279616455304,
+      "precision": 0.8648874061718098,
+      "recall": 0.8924268502581756,
+      "f1": 0.8784413384159254,
+      "roc_auc": 0.9478616680975125
+    },
+    "heuristic_baseline": {
+      "accuracy": 0.665635632539437,
+      "precision": 0.5786407766990291,
+      "recall": 0.25645438898450945,
+      "f1": 0.35539654144305305
+    }
+  },
+  "feature_importance_top20": {
+    "has_privacy_policy": 0.2307501718076362,
+    "subdomain_count": 0.19851190944555344,
+    "has_owner": 0.15307452942984745,
+    "has_cnames": 0.03067955600148964,
+    "sites": 0.029492744911933624,
+    "prevalence": 0.029346435585428165,
+    "total_cookie_prevalence": 0.023304359737826127,
+    "distinct_api_count": 0.022025379866417807,
+    "std_api_weight": 0.01988824097434928,
+    "max_api_weight": 0.019418418468100645,
+    "resource_count": 0.01665051489564785,
+    "median_api_weight": 0.016624969466065474,
+    "total_api_calls": 0.016568541585614584,
+    "max_resource_fingerprinting": 0.016402367590456834,
+    "weighted_fp_score": 0.014484797319216553,
+    "fetch_count": 0.01359418729040257,
+    "image_count": 0.013448261226861172,
+    "script_count": 0.011355628621416328,
+    "mean_api_weight": 0.011202670029848547,
+    "total_cookies_sent": 0.010938013569698219
+  },
+  "novel_detections": {
+    "rf_catches_heuristic_misses": 866,
+    "xgb_catches_heuristic_misses": 885,
+    "ff_catches_heuristic_misses": 912
+  }
+}

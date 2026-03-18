@@ -1,0 +1,23 @@
+{
+  "input_dim": 164,
+  "hidden_dim": 128,
+  "output_dim": 13,
+  "labels": [
+    "Adobe Inc.",
+    "ByteDance Ltd.",
+    "Comcast Corporation",
+    "Conversant LLC",
+    "Google LLC",
+    "HubSpot, Inc.",
+    "Impact",
+    "Leven Labs, Inc. DBA Admiral",
+    "Microsoft Corporation",
+    "Oracle Corporation",
+    "Salesforce.com, Inc.",
+    "Yahoo Inc.",
+    "Yandex LLC"
+  ],
+  "accuracy": 0.5846994535519126,
+  "top5_accuracy": 0.8415300546448088,
+  "weighted_f1": 0.6036854240453027
+}
