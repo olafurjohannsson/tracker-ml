@@ -8,10 +8,10 @@ ML-based analysis of web tracking infrastructure using DuckDuckGo's [Tracker Rad
 Binary classification of tracking vs non-tracking domains using 295 behavioral features. XGBoost achieves F1 of 0.893. Identifies 338 tracking domains missed by the fingerprinting heuristic, including facebook.com and adnxs.com.
 
 ### 2. [Entity Attribution](entity-attribution/)
-Predicts which company owns a domain based purely on behavioral patterns — API usage, cookie behavior, resource types. 57% of domains in the dataset have no ownership info. Includes a 4-class entity type classifier (75% accuracy) and a 13-class tracking entity attributor for ad tech domains.
+Predicts which company owns a domain based purely on behavioral patterns, API usage, cookie behavior, resource types. 57% of domains in the dataset have no ownership info. Includes a 4-class entity type classifier (75% accuracy) and a 13-class tracking entity attributor for ad tech domains.
 
 ### [Interactive Demo](site/)
-Force graph visualization of the tracking ecosystem with all three models running in-browser via WebAssembly. Click any domain to see its tracking classification, entity type, and predicted owner — all computed locally in sub-millisecond time.
+Force graph visualization of the tracking ecosystem with all three models running in-browser via WebAssembly. Click any domain to see its tracking classification, entity type, and predicted owner, all computed locally in sub-millisecond time.
 
 ## Setup
 

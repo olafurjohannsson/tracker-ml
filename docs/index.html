@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TrackerML — Web Tracking Intelligence</title>
+<title>TrackerML - Web Tracking Intelligence</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
@@ -521,7 +521,7 @@
 
         <div class="about-model">
           <div class="about-model-name">Tracking Detection</div>
-          <div class="about-model-desc">Binary classifier (F1 0.893) trained on 295 behavioral features. Detects tracking across all vectors — cookies, pixels, fingerprinting — not just browser API abuse. Identifies 338 trackers the fingerprinting heuristic misses, including facebook.com and adnxs.com.</div>
+          <div class="about-model-desc">Binary classifier (F1 0.893) trained on 295 behavioral features. Detects tracking across all vectors, cookies, pixels, fingerprinting, not just browser API abuse. Identifies 338 trackers the fingerprinting heuristic misses, including facebook.com and adnxs.com.</div>
         </div>
 
         <div class="about-model">
@@ -535,7 +535,7 @@
         </div>
 
         <div class="about-caveats">
-          <strong>Limitations.</strong> The entity cluster model can over-predict ad tech for domains with limited metadata. Entity attribution is a probabilistic guess, not a definitive answer — domains with unusual behavioral profiles may be misattributed to larger entities that dominate the training data. The tracker classifier's main failure mode is false positives on CDN domains owned by large tech companies, where ownership metadata mimics tracking signals.
+          <strong>Limitations.</strong> The entity cluster model can over-predict ad tech for domains with limited metadata. Entity attribution is a probabilistic guess, not a definitive answer, domains with unusual behavioral profiles may be misattributed to larger entities that dominate the training data. The tracker classifier's main failure mode is false positives on CDN domains owned by large tech companies, where ownership metadata mimics tracking signals.
         </div>
 
         <div class="about-footer">
